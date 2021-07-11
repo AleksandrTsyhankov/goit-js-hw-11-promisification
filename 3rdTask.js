@@ -13,7 +13,7 @@ const makeTransaction = (transaction) => {
 
     return new Promise((resolve, reject) => {
         const canProcess = Math.random() > 0.3;
-console.log(canProcess)
+
         if (canProcess) {
             resolve(transaction.id, delay);
         } 
